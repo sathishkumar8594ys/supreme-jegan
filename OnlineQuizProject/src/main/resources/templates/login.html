@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	
+	<style>
+
+body{
+	background-color:cornsilk;
+}
+	
+	h2{
+	    align-items:center;
+		justify-content:center;
+		display:flex;
+		padding:30px 100px 15px;
+	}
+	.direction{
+	    align-items:center;
+		justify-content:center;
+		display:flex;
+		padding:40px 45px 50px;
+	}
+	input{
+		display :block;
+		width :100%;
+		padding :2%;
+		border-radius:2%;
+		border-color:blue;
+	}
+	
+	</style>
+	<head>
+			<title>
+				Online Quiz
+			</title>	
+	</head>
+	
+	<body>	
+	
+		<h2>Login in to Take Test</h2>
+		<div class="direction">
+		
+		<form action="login" method="post"> 	
+		<div class="inputedit">
+		<input placeholder="Email" type="text" name="email" size= "35" required >
+		<br><br>
+		<input placeholder="Password" type="password" maxlength="15" name="pass" required>
+		<br><br>		
+		<input type="submit">
+		
+		<p> Dont Have an Account?<a href="register">Sign Up now</a></p>
+		<p> Admin Access..?<a href="/libraryadmin/adminlogin">Login</a></p>
+		</div>	
+		
+	</body>
+</html>

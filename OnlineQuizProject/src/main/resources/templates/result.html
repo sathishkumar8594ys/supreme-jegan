@@ -1,0 +1,125 @@
+<html>
+<head>
+<title>Online Exam</title>
+
+<style>
+.lefttop{
+	align-items:left;
+	justify-content:left;
+	color:red;
+	margin-left:10px;
+	margin-top:10px;
+}
+
+body{
+	color:aliceblue;
+	background-color:aliceblue;
+}
+nav{
+    display:flex;  
+    align-items: center;  
+    padding-left: 40%; 
+    padding-top: 0;
+}
+nav ul{
+    display:flex;
+}
+
+nav ul li{
+    
+    padding:0px 60px;
+}
+
+nav ul li a{
+    color:green;
+    font-weight: bold;
+    text-decoration: none; 
+    font-size:20px;
+}
+
+nav ul li a:hover{
+    color:blue; 
+}
+.instructions{
+	color:black;
+}
+
+ul li{	
+	display:inline-block;
+	list-style-type:none;
+	color:#fff;
+	padding:45px;
+	
+}
+tr table,th,td{
+	border:0.2px solid rgb(0, 0, 255);
+	border-collapse:collapse;
+	width:250px;
+	color:rgb(0, 0, 0);
+}
+th{
+	background:rgb(128, 255, 128);	
+	color:rgb(0, 128, 192);
+}
+h2{
+	align-items:center;
+	justify-content:center;
+	display:flex;
+}
+body{
+	background-color:aquamarine;
+
+}
+
+body{
+	color:black;
+}
+
+.table{
+	padding:20px 300px;
+	border:20px;	
+	color:black;	
+}
+
+</style>
+
+</head>
+
+
+
+<body>
+
+
+<div class="lefttop">
+<h2>Online Quiz Result</h2>
+</div>
+
+<div class="hero">
+             <nav>
+                <ul>
+                <li><a href="home"> Home </a></li>
+                    <li><a href="taketest"> Take Test </a></li>
+                    <li><a href="logout"> Logout</a></li> 
+                </ul>
+            </nav>
+            
+          <table class="table">
+          <tr>
+          	<th>Test Name</th>
+          	<th>Total marks</th>
+            <th>Marks obtained</th>
+            <th>Status</th>
+          </tr>
+             <td th:text="${testname}"></td>
+             <td th:text="${totalmarks}"></td>
+             <td th:text="${marks}"></td>
+             <td th:text="${status}"></td>
+          </table> 
+            
+  
+</div>
+
+
+</body>
+
+</html>
